@@ -1,0 +1,104 @@
+import styled from 'styled-components';
+
+export const StyledCard = styled.div`
+  width: 335px;
+  background: white;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+`
+
+export const ImageCard = styled.img`
+height: 180px;
+width: 100%;
+object-fit: cover;
+display: block;
+`
+
+export const ButtonBlock = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 0 15px 15px;
+margin-top: 30px;
+button {
+  margin: 5px;
+  width: 60%;
+}
+`
+
+export const InfomationBlock = styled.div`
+padding: 20px 15px 0;
+
+`
+
+export const HeaderCard = styled.header`
+margin-bottom: 10px;
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+
+  .stars {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .star {
+    width: 15px;
+    height: 13px;
+    & + & {
+      margin-left: 5px;
+    }
+  }
+`
+export const TitleCard = styled.h3`
+font-size: rem(21px);
+line-height: 21px;
+margin-right: 15px;
+color: grey;
+`
+export const PriceWrapper = styled.div`
+flex-shrink: 0;
+.offer_price {
+    font-style: normal;
+    font-weight: normal;
+    font-size: rem(10px);
+    line-height: 10px;
+    text-align: right;
+    color: grey;
+  }
+  
+  .price {
+    font-style: normal;
+    line-height: 22px;
+    font-weight: bold;
+    color: grey;
+  }
+`
+export const ListFeatures = styled.ul`
+width: 100%;
+padding: 0;
+`
+
+export const ItemFeature = styled.li`
+display: flex;
+align-items: center;
+margin: 0;
+
+  p {
+    margin: 0;
+    margin-top: 10px;
+    
+  }
+
+ img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+  
+`
