@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Dot, SlideImage, StyledSlider } from "./StyledSlider";
+import { DotStyled, SlideImage, StyledSlider } from "./StyledSlider";
 
 import {
   FaChevronRight,
@@ -8,9 +8,17 @@ import {
 import { ImageGallery } from "../../data/gallery";
 
 interface SliderProps {
-    slides: ImageGallery[]
-    pagination: boolean
+  slides: ImageGallery[]
+  pagination: boolean
 }
+
+interface DotProps {
+  index: number
+  setSlideIndex: React.Dispatch<React.SetStateAction<number>>
+  slideIndex: number
+}
+
+const Dot = ({index, setSlideIndex, slideIndex}: DotProps) => <DotStyled key={index} className={index === slideIndex ? "isActive": ""} onClick={() => setSlideIndex(index)}/>
 
 const Slider = ({ slides, pagination }: SliderProps) => {
   const [current, setCurrent] = useState(0);
@@ -40,11 +48,7 @@ const Slider = ({ slides, pagination }: SliderProps) => {
           </div>
         );
       })}
-      {pagination && slides.map((slide, index) => {
-        return (
-          <Dot key={index} onClick={() => setCurrent(index)}/>
-        );
-      })}
+      {pagination && slides.map((slide, index) => <Dot index={index} setSlideIndex={setCurrent} slideIndex={current}/>)}
       
       </div>
        <FaChevronRight

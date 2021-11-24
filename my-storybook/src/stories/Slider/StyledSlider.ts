@@ -13,7 +13,7 @@ export const StyledSlider = styled.div`
   align-items: center;
 `;
 
-export const Dot = styled.span`
+export const DotStyled = styled.span`
 cursor: pointer;
 height: 15px;
 width: 15px;
@@ -23,8 +23,9 @@ border-radius: 50%;
 display: inline-block;
 transition: background-color 0.6s ease;
 
-  &:active, &:hover {
+  &.isActive, &:hover {
   background-color: #717171;
   }
+ 
 
 `
