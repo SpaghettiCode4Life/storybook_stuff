@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { FaChevronDown, FaChevronRight } from "react-icons/fa";
 import { MenuBanner, MenuEntry } from "../../data/menu";
-import { SectionItem, SectionList, StyledNavBar, Board, Block, BannerItem, BlockItem, BannerImg, BannerText, SectionText, SectionLink } from "./StyledNavBar";
+import { SectionItem, SectionList, StyledNavBar, Board, Block, BannerItem, BlockItem, BannerImg, BannerText, SectionText, SectionLink, LogoItem } from "./StyledNavBar";
 // import flecha from "./assets/flechaside.svg";
 // import flechaSection from "./assets/flechamenu.svg";
-// import logo from "./assets/stackalt.svg";
+import logo from "../../../src/stories/assets/logo.png";
 
 
 
@@ -90,11 +91,11 @@ export const NavBar = ({
           }
         >
 
-          {props.type !== "level" ? <SectionLink href={props.href}>{props.text}</SectionLink> : <SectionText>{props.text}</SectionText>}
+          {props.type !== "level" ? <a className="sectionText">{props.text}</a> : <p className="sectionText">{props.text}</p>}
         
-          {props.type === "level" && <div  className={"submenuIcon"} >
-              {/* <img  src={flecha} alt="flecha" /> */}
-            </div>}
+          {props.type === "level" && 
+          <FaChevronRight className="blockIcon"/>}
+           
         </BlockItem>
       ))
     );
@@ -117,7 +118,6 @@ export const NavBar = ({
           />
           <BannerText>
             {banners[position] && <a href={banners[position].href}>{banners[position].text}</a>}
-            <p>{banners[position]?.info}</p>
           </BannerText>
         </BannerItem>
       )
@@ -127,11 +127,12 @@ export const NavBar = ({
   return (
     <StyledNavBar>
       <SectionList>
-        {/* <li key="default">
-            <a href="/" className={"logo"} >
-            <img  src={logo} alt="logoMain" />
+        <LogoItem>
+            <a href="/"  >
+            <img  className={"logo"}src={logo} alt="logoMain" />
             </a>
-        </li> */}
+        </LogoItem>
+         
         {menu.map((props) => (
           <SectionItem
             key={props.text}
@@ -143,13 +144,12 @@ export const NavBar = ({
            
           >
    
-            {props.type !== "level" ? <SectionLink href={props.href}>{props.text}</SectionLink> : <SectionText>{props.text}</SectionText>}
+            {props.type !== "level" ? <a className="sectionTitle">{props.text}</a> : <p className="sectionTitle">{props.text}</p>}
         
             {props.type === "root" && (
-              <div className={"sectionIcon"}>
-                ^
-                {/* <img  src={flechaSection} alt="flechaSection" /> */}
-              </div>
+            
+                <FaChevronDown className="sectionIcon"/>
+             
             )}
 
              {props.type === "root" && (

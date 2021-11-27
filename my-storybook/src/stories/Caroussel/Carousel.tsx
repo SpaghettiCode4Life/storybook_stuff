@@ -27,15 +27,16 @@ const Carousel = ({ cards  }: CarouselProps) => {
 
   return (
     <StyledCarousel>
+      { current > 0 ?
       <FaChevronLeft
         className="left-arrow"
         onClick={prevSlide}
-      />
+      />: <div/>}
    
       <StyledContainer>
       {cards.map((card, index) => {
-            let position = index > current ? "nextSlide" 
-            : index === current ? "activeSlide" : "prevSlide";
+            let position = index === current + 1 ? "nextSlide" 
+            : index === current - 1 ? "prevSlide" : index === current ? "activeSlide" : "notActiveSlide";
           return (
           <StyledSlide >
             <Wrapper className={`${position}`}>
@@ -46,10 +47,10 @@ const Carousel = ({ cards  }: CarouselProps) => {
         })}
        </StyledContainer>
     
-       <FaChevronRight
+      { cards.length -1 > current ? <FaChevronRight
         className="right-arrow"
         onClick={nextSlide}
-      />
+      /> : <div/>}
     </StyledCarousel>
   );
 };

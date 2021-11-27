@@ -32,7 +32,6 @@ interface MenuLevel {
   } & (MenuLevel | MenuInternal | MenuExternal | MenuText | MenuRoot);
   
   export type MenuBanner = {
-    info: string;
     text: string;
     icon: string;
     img: string;
@@ -47,16 +46,14 @@ export const mainMenu: MenuEntry[] = [
       banners: [
         {
           text: "Baner customizado",
-          info: "Baner custom con link externo",
-          img: "/fondofooter.jpg",
+          img: "https://i2.wp.com/www.cgquarterly.com/wp-content/uploads/2015/07/tetris1.png",
           type: "external",
           href: "/entradas+halloween",
           icon: "promotionMenu"
         },
         {
           text: "Entradas + Hotel",
-          info: "Del 1 de jul. 2021 al 31 de ago. 2021.",
-          img: "/fondofooter.jpg",
+          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKpl0xj33VRrMaqAoFgwy-_6Q3pKw7mK3sjA&usqp=CAU",
           type: "external",
           href: "http://www.portaventuraworld.com",
           icon: "promotionMenu"
@@ -197,7 +194,6 @@ export const mainMenu: MenuEntry[] = [
       banners: [
         {
           text: "Entradas + Hotel",
-          info: "Del 1 de jul. 2021 al 31 de ago. 2021.",
           img: "/fondofooter.jpg",
           type: "external",
           href: "http://www.portaventuraworld.com",
@@ -205,7 +201,6 @@ export const mainMenu: MenuEntry[] = [
         },
         {
           text: "Pack Aventura",
-          info: "Del 1 de jul. 2021 al 31 de ago. 2021.",
           img: "/fondofooter.jpg",
           type: "external",
           href: "http://www.portaventuraworld.com",
@@ -304,7 +299,6 @@ export const mainMenu: MenuEntry[] = [
       "banners": [
         {
           "text": "Entradas + Hotel",
-          "info": "Del 1 de jul. 2021 al 31 de ago. 2021.",
           "img": "/fondofooter.jpg",
           "type": "external",
           "href": "http://www.portaventuraworld.com",
@@ -312,7 +306,6 @@ export const mainMenu: MenuEntry[] = [
         },
         {
           "text": "Pack Aventura",
-          "info": "Del 1 de jul. 2021 al 31 de ago. 2021.",
           "img": "/fondofooter.jpg",
           "type": "external",
           "href": "http://www.portaventuraworld.com",
@@ -375,7 +368,6 @@ export const mainMenu: MenuEntry[] = [
       "banners": [
         {
           "text": "Entradas + Hotel",
-          "info": "Del 1 de jul. 2021 al 31 de ago. 2021.",
           "img": "/fondofooter.jpg",
           "type": "external",
           "href": "http://www.portaventuraworld.com",
@@ -383,7 +375,6 @@ export const mainMenu: MenuEntry[] = [
         },
         {
           "text": "Pack Aventura",
-          "info": "Del 1 de jul. 2021 al 31 de ago. 2021.",
           "img": "/fondofooter.jpg",
           "type": "external",
           "href": "http://www.portaventuraworld.com",

@@ -1,21 +1,21 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { NavBar } from './NavBar';
+import { NavList } from './NavList';
 import { mainMenu } from '../../data/menu';
 
 export default {
   title: 'Example/NavBar',
-  component: NavBar,
-} as ComponentMeta<typeof NavBar>;
+  component: NavList,
+} as ComponentMeta<typeof NavList>;
 
-const Template: ComponentStory<typeof NavBar> = (args) => <NavBar {...args} />;
+const Template: ComponentStory<typeof NavList> = (args) => <NavList {...args} />;
 
 
 
-export const Desktop = Template.bind({});
+export const Mobile = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Desktop.args = {
+Mobile.args = {
   menu: mainMenu,
    
 };

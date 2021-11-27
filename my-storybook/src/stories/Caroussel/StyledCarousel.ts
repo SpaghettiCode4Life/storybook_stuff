@@ -4,38 +4,43 @@ import styled from "styled-components";
 export const StyledCarousel = styled.div`
 display: flex;
 flex-direction: row;
-align-items: flex-start;
+align-items: center;
 justify-content: space-around;
 `
 
 export const StyledContainer = styled.div`
-display: flex
+display: flex;
+width: 50%;
+height: 350px;
 
 `
 
 export const StyledSlide = styled.div`
 position: relative;
-display: flex
 `
 export const Wrapper = styled.div`
 position: absolute;
 
 &.prevSlide{
-    left: calc(0% + 2rem);
+    top: 20px;
     z-index: 1;
     opacity: 0.2;
  
   }
   
   &.activeSlide {
-  
-    transform: translateX(-50%);
+    transform: translateX(+50%);
     z-index: 2;
   }
+
+  &.notActiveSlide {
+   display: none;
+  }
+  
   
   &.nextSlide {
-    left: 100%;
-    transform: translateX(calc(-100% - 2rem));
+    top: 20px;
+    transform: translateX(+100%);
     z-index: 1;
     opacity: 0.2;
   
