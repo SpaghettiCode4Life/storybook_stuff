@@ -1,13 +1,26 @@
 import styled from 'styled-components';
 
 export const StyledCard = styled.div`
-  width: 335px;
-  background: white;
-  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+width: 100%;
+max-width: 310px;
+height: 100%;
+border-radius: 6px;
+overflow: hidden;
+box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
+position: relative;
+background-color: $co-white;
+display: flex;
+flex-direction: column;
+
+&.isCover {
+  box-shadow: none;
+  padding: 100px 20px 40px;
+  background: {
+    position: center;
+    repeat: no-repeat;
+    size: cover;
+  }
+}
 `
 
 export const ImageCard = styled.img`
@@ -23,15 +36,35 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 padding: 0 15px 15px;
-margin-top: 30px;
+margin-top: 20px;
 button {
-  margin: 5px;
-  width: 60%;
+  padding: 17px 0px;
+  width: 100%;
+  text-align: center;
+  margin: 5px 35px;
+}
+&.isCover {
+  button {
+    background: transparent;
+    margin: 0 35px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    &:hover,
+    &:active {
+      padding: 16px 0px;
+      border-width: 3px;
+    }
+  }
 }
 `
 
 export const InfomationBlock = styled.div`
 padding: 20px 15px 0;
+  &.isCover {
+    color: white;
+    margin-bottom: 50px;
+    line-height: 21px;
+  }
 
 `
 
@@ -59,6 +92,14 @@ font-size: rem(21px);
 line-height: 21px;
 margin-right: 15px;
 color: grey;
+  &.isCover {
+  height: auto;
+  font-size: 40px;
+  line-height: 44px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 `
 export const PriceWrapper = styled.div`
 flex-shrink: 0;

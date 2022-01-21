@@ -2,7 +2,7 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import CardComponent from './Card';
-import { cardItems, cardRating } from '../../data/card';
+import { cardItems, cardRating, coverCard } from '../../data/card';
 
 export default {
   title: 'Example/Card',
@@ -25,5 +25,12 @@ export const ItemsList = Template.bind({});
 ItemsList.args = {
   cardInfo: cardItems,  
 };
+
+export const CoverCard = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+CoverCard.args = {
+  cardInfo: coverCard,  
+};
+
 
 

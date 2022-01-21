@@ -13,6 +13,7 @@ type ButtonCard = {
 export interface CardType {
   stars?: number;
   price?: number;
+  type?: string;
   items?: DBFeatureData[];
   image: { src: string; alt: string };
   name: string;
@@ -39,6 +40,20 @@ export const cardRating: CardType = {
     },
     stars: 4,
     price: 450
+}
+
+export const coverCard: CardType = {
+  type: "cover",
+  image:{
+    "alt": "Hotel Colorado Creek",
+    "src": "https://search.portaventuraworld.com/assets/hotel/112618/media/property-images/property-main-image/hgr_3_320x320.jpg"
+  },
+  buttonPrimary: {
+    label: "Ver más",
+    url: "/parques/parqueportaventura"
+  },
+  name: "Atracciones",
+  description: "Descubre las 43 atracciones de todo tipo que te encontrarás en PortAventura Park",
 }
 
 export const cardItems: CardType =  {

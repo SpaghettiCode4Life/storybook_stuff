@@ -16,17 +16,27 @@ export interface CardProps {
 const onGoTo = (url: string) => () => window.open(url, "_blank");
 
 const CardComponent = ({ cardInfo, buttonColor }: CardProps) => (
-  <StyledCard>
+  <StyledCard className={`${
+    cardInfo.type === "cover" ? "isCover" : ""
+  }`}
+  style={
+    cardInfo.type === "cover"
+      ? {
+          backgroundImage: `linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(${cardInfo.image.src})`,
+        }
+      : {}
+  }
+  >
   
-    <ImageCard
+  {cardInfo.type !== "cover" && <ImageCard
       src={cardInfo.image.src}
       alt={cardInfo.image.alt}
-    />
+    />}
         
     <CardContent {...cardInfo} />
      
   
-    <ButtonBlock>
+    <ButtonBlock className={`${cardInfo.type === "cover" ? "isCover" : ""}`}>
     {cardInfo.buttonPrimary && (
         <Button
           onClick={onGoTo(cardInfo.buttonPrimary.url)}
@@ -50,7 +60,7 @@ const CardComponent = ({ cardInfo, buttonColor }: CardProps) => (
 );
 
 const CardContent = (feature: CardType) => (
-  <InfomationBlock>
+  <InfomationBlock className={`${feature.type === "cover" ? "isCover" : ""}`}>
     <HeaderCard>
       <div>
         {feature.stars && (
@@ -60,7 +70,7 @@ const CardContent = (feature: CardType) => (
             ))}
           </div>
         )}
-        <TitleCard>{feature.name}</TitleCard>
+        <TitleCard className={`${feature.type === "cover" ? "isCover" : ""}`}>{feature.name}</TitleCard>
       </div>
       {feature.price &&
       <PriceWrapper>
