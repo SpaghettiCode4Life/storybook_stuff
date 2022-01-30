@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 
 export const StyledCard = styled.div`
-width: 100%;
-max-width: 310px;
+width: 310px;
 height: 100%;
 border-radius: 6px;
 overflow: hidden;
 box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.1);
 position: relative;
-background-color: $co-white;
+background-color: white;
 display: flex;
 flex-direction: column;
 
