@@ -23,7 +23,7 @@ export interface CardType {
 }
 
 export const cardRating: CardType = {
-    name: "Hotel Gold River",
+    name: "Hotel Card ejemplo",
     buttonPrimary: {
       "label": "Ver hotel",
       "url": ""
@@ -33,9 +33,9 @@ export const cardRating: CardType = {
       "url": ""
     },
   
-    description: "Siéntete como un auténtico vaquero de la época dorada del Lejano Oeste alojándote en el poblado de Sullivan para disfrutar de una aventura única al más puro estilo Far West. ¿Estás listo para vivir las aventuras de un auténtico vaquero?.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     image: {
-      "alt": "Hotel Colorado Creek",
+      "alt": "Hotel ejemplo",
       "src": "https://search.portaventuraworld.com/assets/hotel/112618/media/property-images/property-main-image/hgr_3_320x320.jpg"
     },
     stars: 4,
@@ -45,52 +45,52 @@ export const cardRating: CardType = {
 export const coverCard: CardType = {
   type: "cover",
   image:{
-    "alt": "Hotel Colorado Creek",
+    "alt": "tarjeta cover",
     "src": "https://search.portaventuraworld.com/assets/hotel/112618/media/property-images/property-main-image/hgr_3_320x320.jpg"
   },
   buttonPrimary: {
     label: "Ver más",
     url: "/parques/parqueportaventura"
   },
-  name: "Atracciones",
-  description: "Descubre las 43 atracciones de todo tipo que te encontrarás en PortAventura Park",
+  name: "Card Type",
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
 }
 
 export const cardItems: CardType =  {
-    name: "Portaventura Park",
+    name: "Card listing",
     buttonPrimary: {
-      label: "Ver parque",
+      label: "Ver más",
       url: "/parques/parqueportaventura"
     },
     
-    description: "Seis fascinantes mundos completamente distintos, para que disfrutes al máximo con toda tu familia.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     image: {
-      "alt": "portaventuraPark",
+      "alt": "imagelistcard",
       "src": "https://www.portaventuraworld.com/static/1a81162122685db2ff69aea26cdd8e9e/05b6c/cabecera-pap.jpg"
     },
     items: [
       {
         "icon": "compass",
-        "text": "6 mundos por explorar llenos de diversión."
+        "text": "Primer característica."
       },
       {
         "icon": "rocket",
-        "text": "Más de 40 atracciones."
+        "text": "Segunda característica."
       },
       {
         "icon": "star_raw",
-        "text": "Nuevos espectáculos cada época del año."
+        "text": "Tercera característica."
       },
       {
         "icon": "utensils",
-        "text": "Comida en un entorno caribeño"
+        "text": "Cuarta característica."
       }
     ]
 }
 
 export const cardsHotel: CardType[] = [
   {
-    name: "Hotel Colorado Creek",
+    name: "Hotel Card 1",
     buttonPrimary: {
       label: "Ver hotel",
       url: ""
@@ -100,16 +100,16 @@ export const cardsHotel: CardType[] = [
       url: ""
     },
 
-    description: "Al norte de la ciudad de Sullivan, los buscadores de oro construyeron un hotel repleto de comodidades, donde compartían sus viajes y aventuras. Adéntrate en el auténtico viaje por la fiebre del oro en nuestro Hotel Colorado Creek 4*.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     image: {
-      alt: "Hotel Colorado Creek",
+      alt: "image1",
       src: "https://search.portaventuraworld.com/assets/hotel/112624/media/property-images/property-main-image/hcc-1.jpg"
     },
     stars: 4,
     price: 175
   },
   {
-    name: "Hotel Gold River",
+    name: "Hotel Card 2",
     buttonPrimary: {
       label: "Ver hotel",
       url: ""
@@ -119,16 +119,16 @@ export const cardsHotel: CardType[] = [
       url: ""
     },
 
-    description: "Siéntete como un auténtico vaquero de la época dorada del Lejano Oeste alojándote en el poblado de Sullivan para disfrutar de una aventura única al más puro estilo Far West. ¿Estás listo para vivir las aventuras de un auténtico vaquero?.",
+    description: "SLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     image: {
-      alt: "Hotel Colorado Creek",
+      alt: "image2",
       src: "https://search.portaventuraworld.com/assets/hotel/112618/media/property-images/property-main-image/hgr_3_320x320.jpg"
     },
     stars: 4,
     price: 450
   },
   {
-    name: "Hotel Mansion de Lucy",
+    name: "Hotel Card 3",
     buttonPrimary: {
       label: "Ver hotel",
       url: "/hoteles/mansionlucy"
@@ -138,9 +138,9 @@ export const cardsHotel: CardType[] = [
       url: "/hoteles/mansionlucy"
     },
    
-    description: "Disfruta de nuestro Hotel 5 estrellas en la Costa Dorada ambientado en el puro Far West del Siglo XIX y ubicado [b]Ubicado en[/b]ortAventura Park. Habitaciones lujosas donde podrás vivir la auténtica experiencia PortAventurera, pasarlo en grande y descansar de tu día en los parques.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     image: {
-      alt: "Hotel Colorado Creek",
+      alt: "image3",
       src: "https://search.portaventuraworld.com/assets/hotel/112620/media/property-images/property-main-image/hml_-_3__-_320x320.jpg"
     },
     stars: 5,
@@ -148,7 +148,7 @@ export const cardsHotel: CardType[] = [
     price: 650
   },
   {
-    name: "Hotel PortAventura",
+    name: "Hotel Card 4",
     buttonPrimary: {
       label: "Ver hotel",
       url: ""
@@ -158,9 +158,9 @@ export const cardsHotel: CardType[] = [
       url: ""
     },
  
-    description: "Vive la magia del Mediterráneo en el Hotel PortAventura: trasládate a este maravilloso hotel que recrea un pueblo pesquero y disfruta de una relajante experiencia.",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     image: {
-      alt: "Hotel Colorado Creek",
+      alt: "image4",
       src: "https://search.portaventuraworld.com/assets/hotel/112616/media/property-images/property-main-image/hpa_2_320x320.jpg"
     },
     stars: 4,

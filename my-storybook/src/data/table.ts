@@ -1,17 +1,17 @@
-
+import promotionIcon from "../stories/assets/colors.svg";
 
 type DaysPerPrice = number;
 export type DaysPerNight = Record<number, number>;
 
 export interface AccessDayRow {
-  parkId: string;
+  tableId: string;
   days?: DaysPerNight;
   price?: DaysPerPrice;
 }
 
   export type AccessDayOutput = AccessDayRow & {
-    parkName: string;
-    parkIcon: string;
+    name: string;
+    icon: string;
   };
 
   export interface Noun {
@@ -30,33 +30,33 @@ export interface AccessDayRow {
   }
 export const dataTable: AccessDaysOutputData =    {
   
-    title: "¿Cuántos días puedo acceder a los parques?",
+    title: "Título de la tabla",
     accessDays: [
       {
-        parkId: "portaventura",
+        tableId: "firstItem",
         days: {
           1: 2,
           2: 3,
           3: 4
         },
-        parkName: "Portaventura Park",
-        parkIcon: "portaventuraLogo"
+        name: "First Item",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Mickey_Mouse_head_and_ears.svg"
       },
       {
-        parkId: "ferrari-land",
+        tableId: "secondItem",
         days :{
           1: 1,
           2: 1,
           3: 1
         },
-        parkName: "Ferrari Land",
-        parkIcon: "ferrarilandLogo"
+        name: "Second Item",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Mickey_Mouse_head_and_ears.svg"
       },
       {
-        parkId: "caribe-aquatic-park",
+        tableId: "thirdItem",
         price: 6,
-        parkName: "Caribe Aquatic Park",
-        parkIcon: "caribeLogo"
+        name: "Third Item",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Mickey_Mouse_head_and_ears.svg"
       }
     ],
     nightText: {
@@ -68,6 +68,6 @@ export const dataTable: AccessDaysOutputData =    {
       plural: "días"
     },
     pricePerDay: "€/día",
-    videoImage: "/fondofooter.jpg",
-    description: "Aquí te mostramos un ejemplo de cuántos días puedes acceder a los parques en base a tus noches de estancia ¡Si estás más noches, podrás acceder durante más días a nuestros parques!"
+    videoImage: "https://search.portaventuraworld.com/assets/hotel/112618/media/property-images/property-main-image/hgr_3_320x320.jpg",
+    description: "Aquí te mostramos un ejemplo de una tabla al que le puedes datos que necesites enseñar de esta manera!"
   }

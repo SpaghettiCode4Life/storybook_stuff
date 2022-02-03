@@ -1,6 +1,6 @@
 
 import { AccessDayOutput, AccessDaysOutputData, DaysPerNight } from "../../data/table";
-import styles from "./accessDays.module.scss";
+import { StyledDescription, StyledTable, StyledTableData, StyledTableFirstColumn, StyledTableFirstRow, StyledTableSecondColumn, StyledTableThirdColumn, StyledTableTitleRow, StyledTableVideo, StyledTitle, StyledVideo } from "./StyledTableData";
 
   
   interface TableDataProps {
@@ -37,19 +37,17 @@ import styles from "./accessDays.module.scss";
     component: AccessDaysOutputData
   ): JSX.Element => {
     return (
-      <tr key={index} className={styles.parkRow}>
-        <td className={styles.parkName}>
-          <div className={styles.parkNameWrapper}>
-            <img alt="parkIcon" src={accessDayRow.parkIcon} className={styles.iconPark} />{" "}
-            <span className={styles.name}>{accessDayRow.parkName}</span>
-          </div>
-        </td>
+      <StyledTableFirstRow key={index}>
+        <StyledTableFirstColumn> 
+            <img alt="icon" src={accessDayRow.icon} className="icon" />{" "}
+            <span className="name">{accessDayRow.name}</span>
+        </StyledTableFirstColumn>
         {accessDayRow.days
           ? accessDays.map((nightNumber, index) => (
-              <td
+              <StyledTableSecondColumn
                 key={index}
-                className={`${styles.days} ${
-                  index == accessDays.length - 1 ? styles.lastCol : ""
+                className={`${
+                  index == accessDays.length - 1 ? "lastCol" : ""
                 }`}
               >
                 {getDayNumber(
@@ -57,15 +55,15 @@ import styles from "./accessDays.module.scss";
                   nightNumber,
                   component
                 )}
-              </td>
+              </StyledTableSecondColumn>
             ))
           : null}
         {accessDayRow.price ? (
-          <td colSpan={accessDays.length} className={styles.price}>
+          <StyledTableThirdColumn colSpan={accessDays.length}>
             {getPricePerDay(accessDayRow.price)} {component.pricePerDay}
-          </td>
+          </StyledTableThirdColumn>
         ) : null}
-      </tr>
+      </StyledTableFirstRow>
     );
   };
   
@@ -87,32 +85,31 @@ import styles from "./accessDays.module.scss";
     ).sort();
   
     return (
-      <section className={styles.root}>
-        <div className={styles.wrapper}>
-          <h1 className={styles.header}>{table.title}</h1>
-          <p className={styles.description}>{table.description}</p>
-          <div className={styles.tableVideo}>
-            <img
-              className={styles.video}
+      <StyledTableData>
+        <div className="wrapper">
+          <StyledTitle>{table.title}</StyledTitle>
+          <StyledDescription>{table.description}</StyledDescription>
+          <StyledTableVideo>
+            <StyledVideo
               src={table.videoImage}
-              alt="AccessDaysVideoImage"
+              alt="TableDataVideoImage"
             />
-            <table className={styles.accessDaysTable}>
+            <StyledTable>
               <thead>
                 <tr>
                   <td></td>
                   {accessDays.map((nightNumber, index) => (
-                    <td
+                    <StyledTableTitleRow
                       key={index}
-                      className={`${styles.nights} ${
-                        index == accessDays.length - 1 ? styles.lastCol : ""
+                      className={`${
+                        index === accessDays.length - 1 ? "lastCol" : ""
                       }`}
                     >
                       {nightNumber}{" "}
-                      {nightNumber == 1
+                      {nightNumber === 1
                         ? table.nightText.singular
                         : table.nightText.plural}
-                    </td>
+                    </StyledTableTitleRow>
                   ))}
                 </tr>
               </thead>
@@ -121,10 +118,10 @@ import styles from "./accessDays.module.scss";
                   drawTableRow(index, accessDayRow, accessDays, table)
                 )}
               </tbody>
-            </table>
-          </div>
+            </StyledTable>
+          </StyledTableVideo>
         </div>
-      </section>
+      </StyledTableData>
     );
   };
 

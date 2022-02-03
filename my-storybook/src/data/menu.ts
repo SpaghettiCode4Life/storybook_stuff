@@ -39,20 +39,20 @@ interface MenuLevel {
 
 export const mainMenu: MenuEntry[] = [
     {
-      text: "Entradas y Paquetes",
+      text: "Discover",
       type: "root",
       href: "/entradas",
       icon: "ticketMenu",
       banners: [
         {
-          text: "Baner customizado",
+          text: "Play Tetris",
           img: "https://i2.wp.com/www.cgquarterly.com/wp-content/uploads/2015/07/tetris1.png",
           type: "external",
           href: "/entradas+halloween",
           icon: "promotionMenu"
         },
         {
-          text: "Entradas + Hotel",
+          text: "Play Pacman",
           img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKpl0xj33VRrMaqAoFgwy-_6Q3pKw7mK3sjA&usqp=CAU",
           type: "external",
           href: "http://www.portaventuraworld.com",
@@ -61,76 +61,71 @@ export const mainMenu: MenuEntry[] = [
       ],
       children: [
         {
-          text: "Entradas a los parques",
+          text: "Programming",
           type: "level",
           href: "/entradas",
           children: [
             {
-              text: "Entradas PortAventura Park",
+              text: "Javascript",
               type: "internal",
               href: "/entradas"
             },
             {
-              text: "Entradas Caribe Aquatic Park",
+              text: "Arduino",
               type: "internal",
               href: "/entradas/caribe-aquatic-park",
            },
             {
-              text: "Entradas Ferrari Land",
+              text: "Others",
               type: "internal",
               href: "/entradas/ferrari-land"
             }
           ]
         },
         {
-          text: "Pases Express",
-          type: "internal",
-          href: "/entradas/pase-express"
-        },
-        {
-          text: "Pases Anuales",
+          text: "Photography",
           type: "level",
           href: "/",
           children: [
             {
-              text: "Pase Anual Platinum",
+              text: "Shoot",
               type: "internal",
               href: "/pase-anual/pase-platinum"
             },
             {
-              text: "Pase Anual Premium",
+              text: "Develop",
               type: "internal",
               href: "/pase-anual/pase-premium"
             },
             {
-              text: "Pase Anual Gold",
+              text: "Techniques",
               type: "internal",
               href: "/pase-anual/pase-gold"
             }
           ]
         },
         {
-          text: "Tarifas Especiales",
+          text: "Music",
           type: "level",
           href: "/",
           children: [
             {
-              text: "Familias numerosas y monoparentales",
+              text: "Theory",
               type: "internal",
               href: "/entradas/familia-numerosa"
             },
             {
-              text: "Personas con discapacidad",
+              text: "Practice",
               type: "internal",
               href: "/entradas/personas-discapacidad-pmr"
             },
             {
-              text: "Grupos escolares",
+              text: "Stuff",
               type: "internal",
               href: "/grupos/grupos-escolares"
             },
             {
-              text: "Grupos vacacionales",
+              text: "Other",
               type: "internal",
               href: "/grupos/grupos-vacacionales"
             }
@@ -138,69 +133,59 @@ export const mainMenu: MenuEntry[] = [
         },
         {
         
-          text: "Promociones",
+          text: "Tutorials",
           type: "level",
           href: "/",
           children: [
             {
-              text: "ENTRADAS + HOTEL desde 65 €* pers./noche",
+              text: "Tutorial 1",
               type: "internal",
               href: "/promociones/vacaciones"
             },
             {
-              text: "Entradas + transporte",
+              text: "Tutorial 2",
               type: "internal",
               href: "/promociones/entradas-transporte"
             },
             {
-              text: "Tienda online PortAventura",
+              text: "Tutorial 3",
               type: "internal",
               href: "/promociones/tienda-online"
             },
             {
-              text: "¿Sois un grupo vacacional o escolar?",
+              text: "Tutorial 4",
               type: "internal",
               href: "/promociones"
             },
             {
-              text: "¡Llévate tus fotos de recuerdo!",
+              text: "Tutorial 5",
               type: "internal",
               href: "/promociones/entrada-hotel"
             },
             {
-              text: "Nuevas promociones para renovar o comprar tu Pase Anual",
+              text: "Tutorial 6",
               type: "internal",
               href: "/promociones/club-oferta-pase-anual"
             },
-            {
-              text: "Entrada de 2 días al precio de 1",
-              type: "internal",
-              href: "/promociones/descuento-entradas"
-            },
-            {
-              text: "30% dto entradas 1 día 2 parques",
-              type: "internal",
-              href: "/promociones/entradas"
-            }
           ]
         }
       ]
     },
     {
-      text: "Parques",
+      text: "Play",
       type: "root",
       href: "/",
       icon: "parqueMenu",
       banners: [
         {
-          text: "Entradas + Hotel",
+          text: "Baner 1",
           img: "/fondofooter.jpg",
           type: "external",
           href: "http://www.portaventuraworld.com",
           icon: "promotionMenu"
         },
         {
-          text: "Pack Aventura",
+          text: "Baner 2",
           img: "/fondofooter.jpg",
           type: "external",
           href: "http://www.portaventuraworld.com",
@@ -209,103 +194,88 @@ export const mainMenu: MenuEntry[] = [
       ],
       children: [
         {
-          text: "Port Aventura Park",
+          text: "Mini Games",
           type: "level",
           href: "/",
           children: [
             {
-              text: "Atracciones",
+              text: "Tetris",
               type: "internal",
               href: "/atracciones"
             },
             {
-              text: "Restaurantes",
+              text: "PacMan",
               type: "internal",
               href: "/restaurantes"
             },
             {
-              text: "Espectáculos",
+              text: "Game Of Life",
               type: "internal",
               href: "/espectaculos"
             },
-            {
-              text: "Tiendas",
-              type: "internal",
-              href: "/tiendas"
-            },
-            {
-              text: "Nuestros Mundos",
-              type: "internal",
-              href: "/zonas"
-            }
           ]
         },
         {
-          text: "Caribe Aquatic Park",
+          text: "Play & Learn",
           type: "level",
           href: "/",
           children: [
             {
-              text: "Atracciones",
+              text: "Make a robot",
               type: "internal",
               href: "/aquatic-park/atracciones"
             },
             {
-              text: "Restaurantes",
+              text: "Make a time machine",
               type: "internal",
               href: "/aquatic-park/restaurantes"
             },
             {
-              text: "Tiendas",
+              text: "Make colors LEDS",
               type: "internal",
               href: "/aquatic-park/tiendas"
             }
           ]
         },
         {
-          text: "Ferrari Land",
+          text: "Design Expert Zone",
           type: "level",
           href: "/",
           children: [
             {
-              text: "Atracciones",
+              text: "Processing tutorials",
               type: "internal",
               href: "/ferrari-land/atracciones"
             },
             {
-              text: "Restaurantes",
+              text: "P5JS tutorials",
               type: "internal",
               href: "/ferrari-land/restaurantes"
             },
             {
-              text: "Espectáculos",
+              text: "CSS challenges",
               type: "internal",
               href: "/ferrari-land/espectaculos"
             },
-            {
-              text: "Tiendas",
-              type: "internal",
-              href: "/ferrari-land/tiendas"
-            }
           ]
         }
       ]
     },
     {
-      "text": "Hoteles",
+      "text": "Travel",
       "type": "root",
       "href": "/",
       "icon": "hotelMenu",
       "banners": [
         {
-          "text": "Entradas + Hotel",
+          "text": "Banner 1",
           "img": "/fondofooter.jpg",
           "type": "external",
           "href": "http://www.portaventuraworld.com",
           "icon": "promotionMenu"
         },
         {
-          "text": "Pack Aventura",
+          "text": "Banner 2",
           "img": "/fondofooter.jpg",
           "type": "external",
           "href": "http://www.portaventuraworld.com",
@@ -314,67 +284,52 @@ export const mainMenu: MenuEntry[] = [
       ],
       "children": [
         {
-          "text": "Hotel Mansión de Lucy",
+          "text": "Barcelona",
           "type": "internal",
           "href": "/hoteles/mansion-de-lucy"
         },
         {
-          "text": "Hotel Colorado Creek",
+          "text": "Toulouse",
           "type": "internal",
           "href": "/hoteles/colorado-creek"
         },
         {
-          "text": "Hotel Gold River",
+          "text": "Paris",
           "type": "internal",
           "href": "/hoteles/gold-river"
         },
         {
-          "text": "Hotel Portaventura",
+          "text": "Reunion Island",
           "type": "internal",
           "href": "/hoteles/port-aventura"
         },
         {
-          "text": "Hotel Caribe",
+          "text": "Ireland",
           "type": "internal",
           "href": "/hoteles/caribe"
         },
         {
-          "text": "Hotel El Paso",
+          "text": "London",
           "type": "internal",
           "href": "/hoteles/el-paso"
-        },
-        {
-          "text": "Hotel Roulette",
-          "type": "internal",
-          "href": "/hoteles/hotel-roulette"
-        },
-        {
-          "text": "Parking Caravaning",
-          "type": "internal",
-          "href": "/hoteles/estacionamiento-autocaravanas"
-        },
-        {
-          "text": "Sports & Wellness",
-          "type": "internal",
-          "href": "/sport-wellness"
         }
       ]
     },
     {
-      "text": "Planea tu visita",
+      "text": "About",
       "type": "root",
       "href": "/",
       "icon": "mapaMenu",
       "banners": [
         {
-          "text": "Entradas + Hotel",
+          "text": "Banner 1",
           "img": "/fondofooter.jpg",
           "type": "external",
           "href": "http://www.portaventuraworld.com",
           "icon": "promotionMenu"
         },
         {
-          "text": "Pack Aventura",
+          "text": "Banner 2",
           "img": "/fondofooter.jpg",
           "type": "external",
           "href": "http://www.portaventuraworld.com",
@@ -383,206 +338,15 @@ export const mainMenu: MenuEntry[] = [
       ],
       "children": [
         {
-          "text": "Horarios",
+          "text": "My Page",
           "type": "internal",
           "href": "/horarios-calendario"
         },
         {
-          "text": "Cómo llegar",
+          "text": "About me",
           "type": "internal",
           "href": "/destino/planificar/como-llegar-a-portaventura"
         },
-        {
-          "text": "Mapa de los parques",
-          "type": "external",
-          "href": "https://s3-eu-west-1.amazonaws.com/portaventura-world-production-files/wilson_cms/images/images/000/014/760/original/MAP_RES_NONE_GEN_0121_002-min-2.jpg"
-        },
-        {
-          "text": "Qué hacer en el resort",
-          "type": "level",
-          "href": "/",
-          "children": [
-            {
-              "text": "Eventos de temporada",
-              "type": "level",
-              "href": "/",
-              "children": [
-                {
-                  "text": "Semana Santa en PortAventura",
-                  "type": "internal",
-                  "href": "/semana-santa"
-                },
-                {
-                  "text": "Halloween en PortAventura",
-                  "type": "internal",
-                  "href": "/halloween"
-                },
-                {
-                  "text": "Navidad en PortAventura",
-                  "type": "internal",
-                  "href": "/navidad"
-                }
-              ]
-            },
-            {
-              "text": "Atracciones",
-              "type": "level",
-              "href": "/",
-              "children": [
-                {
-                  "text": "Atracciones en PortAventura Park",
-                  "type": "internal",
-                  "href": "/atracciones"
-                },
-                {
-                  "text": "Rides en Caribe Aquatic Park",
-                  "type": "internal",
-                  "href": "/aquatic-park/atracciones"
-                },
-                {
-                  "text": "Rides en Ferrari Land",
-                  "type": "internal",
-                  "href": "/ferrari-land/atracciones"
-                }
-              ]
-            },
-            {
-              "text": "Espectáculos",
-              "type": "level",
-              "href": "/",
-              "children": [
-                {
-                  "text": "Espectáculos en PortAventura Park",
-                  "type": "internal",
-                  "href": "/espectaculos"
-                },
-                {
-                  "text": "Espectáculos en Ferrari Land",
-                  "type": "internal",
-                  "href": "/ferrari-land/espectaculos"
-                }
-              ]
-            },
-            {
-              "text": "Dónde comer",
-              "type": "level",
-              "href": "/",
-              "children": [
-                {
-                  "text": "Restaurantes en PortAventura Park",
-                  "type": "internal",
-                  "href": "/restaurantes"
-                },
-                {
-                  "text": "Restaurantes en Caribe Aquatic Park",
-                  "type": "internal",
-                  "href": "/aquatic-park/restaurantes"
-                },
-                {
-                  "text": "Restaurantes en Ferrari Land",
-                  "type": "internal",
-                  "href": "/ferrari-land/restaurantes"
-                },
-                {
-                  "text": "Intolerancias y alergias",
-                  "type": "internal",
-                  "href": "/gastronomia/intolerancias-y-alergias"
-                },
-                {
-                  "text": "NOVEDAD Delion Experience",
-                  "type": "internal",
-                  "href": "/delion-experience"
-                }
-              ]
-            },
-            {
-              "text": "Dónde dormir",
-              "type": "level",
-              "href": "/",
-              "children": [
-                {
-                  "text": "Hotel Mansión de Lucy",
-                  "type": "internal",
-                  "href": "/hoteles/mansion-de-lucy"
-                },
-                {
-                  "text": "Hotel Colorado Creek",
-                  "type": "internal",
-                  "href": "/hoteles/colorado-creek"
-                },
-                {
-                  "text": "Hotel Gold River",
-                  "type": "internal",
-                  "href": "/hoteles/gold-river"
-                },
-                {
-                  "text": "Hotel Portaventura",
-                  "type": "internal",
-                  "href": "/hoteles/port-aventura"
-                },
-                {
-                  "text": "Hotel Caribe",
-                  "type": "internal",
-                  "href": "/hoteles/caribe"
-                },
-                {
-                  "text": "Hotel El Paso",
-                  "type": "internal",
-                  "href": "/hoteles/el-paso"
-                }
-              ]
-            },
-            {
-              "text": "Dónde comprar",
-              "type": "level",
-              "href": "/",
-              "children": [
-                {
-                  "text": "Tienda online PortAventura",
-                  "type": "external",
-                  "href": "https://portaventurastore.com/es/"
-                },
-                {
-                  "text": "Tiendas en PortAventura Park",
-                  "type": "internal",
-                  "href": "/tiendas"
-                },
-                {
-                  "text": "Shops in Caribe Aquatic Park",
-                  "type": "internal",
-                  "href": "/aquatic-park/tiendas"
-                },
-                {
-                  "text": "Tiendas en Ferrari Land",
-                  "type": "internal",
-                  "href": "/ferrari-land/tiendas"
-                }
-              ]
-            },
-            {
-              "text": "Entorno",
-              "type": "level",
-              "href": "/",
-              "children": [
-                {
-                  "text": "Costa Dorada",
-                  "type": "internal",
-                  "href": "/destino/costa-dorada"
-                },
-                {
-                  "text": "Barcelona",
-                  "type": "internal",
-                  "href": "/destino/barcelona"
-                },
-                {
-                  "text": "Hoteles y Campings asociados",
-                  "type": "internal",
-                  "href": "/nosotros/hoteles-campings-asociados"
-                }
-              ]
-            }
-          ]
-        }
       ]
     }
   ]
