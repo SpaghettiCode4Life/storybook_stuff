@@ -1,4 +1,4 @@
 # MyStorybook
 
-Components overview that I principally made or collected from different projects and recycled for my own use. 
+Components overview that I principally made or collected and adapt. 
 Type "yarn storybook" to start
